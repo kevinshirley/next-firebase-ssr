@@ -16,7 +16,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
     // FETCH STUFF HERE
 
     return {
-      props: { message: `Your email is ${email} and your UID is ${uid}.` },
+      props: { message: `Welcome! Your email is ${email} and your UID is ${uid}.` },
     };
   } catch (err) {
     // either the `token` cookie didn't exist

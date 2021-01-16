@@ -5,6 +5,7 @@ import { firebaseClient } from '../firebaseClient';
 export default (_props: any) => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
+
   return (
     <div>
       <Link href="/">
