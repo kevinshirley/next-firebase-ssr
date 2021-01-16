@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import nookies from "nookies";
 import { firebaseAdmin } from "../firebaseAdmin";
 import { firebaseClient } from "../firebaseClient";
@@ -41,6 +42,9 @@ const AuthenticatedPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => (
   <div>
+    <Link href="/">
+      <a>Back Home</a>
+    </Link>
     <p>{props.message!}</p>
     <button
       onClick={async () => {
